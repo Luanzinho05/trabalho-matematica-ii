@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+
+        header {
+            background-color: #007396;
+            color: white;
+            padding: 1rem;
+            text-align: center;
+        }
+
+        header h1 {
+            margin-bottom: 0.5rem;
+        }
+
+        header nav a {
+            color: white;
+            margin: 0 0.5rem;
+            text-decoration: none;
+        }
+
+        header nav a:hover {
+            text-decoration: underline;
+        }
+
+        section {
+            padding: 2rem;
+            margin: 1rem 0;
+            background-color: white;
+            border-radius: 8px;
+        }
+
+        h2 {
+            color: #007396;
+            margin-bottom: 1rem;
+        }
+
+        .timeline {
+            display: flex;
+            flex-direction: column;
+            gap: 0.5rem;
+        }
+
+        .timeline-item {
+            background-color: #e0e0e0;
+            padding: 0.5rem;
+            border-radius: 4px;
+        }
+
+        .version {
+            margin: 1rem 0;
+            padding: 1rem;
+            background-color: #f1f1f1;
+            border-radius: 8px;
+        }
+
+        #contato form {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+        }
+
+        input, textarea, button {
+            padding: 0.5rem;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        button {
+            background-color: #007396;
+            color: white;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #005f73;
+        }
+
+        footer {
+            text-align: center;
+            padding: 1rem;
+            background-color: #007396;
+            color: white;
+        }
+    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Linha do Tempo do Java</title>
+</head>
+<body>
+    <header>
+        <h1>Linha do Tempo do Java</h1>
+        <p>Explore a evolução do Java desde sua criação até os dias atuais.</p>
+        <nav>
+            <a href="#historia">História</a>
+            <a href="#principais-versoes">Principais Versões</a>
+            <a href="#evolucao">Evolução da Tecnologia</a>
+            <a href="#futuro">Futuro</a>
+            <a href="#contato">Contato</a>
+        </nav>
+    </header>
+    <section id="historia">
+        <h2>História do Java</h2>
+        <p>A história do Java começa em 1991, na empresa Sun Microsystems, onde foi formado um grupo de programadores para criar algo revolucionário. Eles achavam que num futuro próximo, as residências e seus aparelhos teriam ligação com os computadores, era a ideia de casa e dispositivos inteligentes que temos hoje em dia. Nesse time estava o James Gosling, que é reconhecido como o criador do Java. O time foi chamado "Green Team", um trocadilho com "dream team" (time dos sonhos) e green people (alienígenas).</p>
+        <br>
+        <p>O time tinha um grande desafio pela frente: criar um programa que pudesse ser executado em diferentes dispositivos eletrônicos. Naquela época, para criar um programa de computador, era necessário escrevê-lo numa linguagem de programação e criar uma versão executável desse programa para cada sistema operacional/arquitetura existente.</p>
+        <br>
+        <p>O Green Team acreditava que o ideal mesmo seria utilizar uma linguagem independente de plataforma, para minimizar os custos de desenvolvimento de programas. Por esse e outros motivos, o time resolveu criar sua própria linguagem de programação (baseada no C++), que chamaram inicialmente de GreenTalk.</p>
+        <br>
+        <p>Utilizando essa linguagem, foi criado o StarSeven (*7), um controle remoto com interface touchscreen para interagir com os equipamentos de uma sala de estar. Para tornar esse controle mais interativo, foi criado o Duke, que até hoje é o mascote do Java. Ainda é possível encontrar na internet o vídeo da demo do *7, feita pelo Gosling. Depois dá uma olhada, é bem bacana.</p>
+        <br>
+        <p>Continuando a história, a linguagem Greentalk foi atualizada para o projeto do *7, e sua nova versão foi chamada de Oak, que fazia referência a um carvalho que era visível no escritório do Gosling. Infelizmente, o projeto não fez muito sucesso pois era muito a frente da sua época, mas as coisas iriam melhorar.</p>
+        <br>
+        <p>Em 1994, a internet estava se tornando popular com o protocolo HTTP e o navegador Mosaic, que era utilizado para acessar os sites na web. O Green Team, que estava tentando encontrar sua posição no mercado, percebeu essa nova tendência e atualizou o Oak para criar aplicações para a internet. Foi aí que nasceu o projeto WebRunner, um navegador que tinha a proposta de trazer interatividade na web. O nome WebRunner foi um tributo ao filme, Blade Runner, um sucesso na época e até hoje um clássico.</p>
+        <br>
+        <p>Quando o time foi registrar a linguagem utilizada no projeto, o nome Oak já tinha sido utilizado. Para escolher um novo nome, o Gosling perguntou ao time o que os motivava. Eles responderam, adivinha só, Java Coffee (um café mais forte) e foi assim que nasceu o Java em 1995.</p>
+        <div class="timeline">
+            <br>
+            <div class="timeline-item"><span>1995</span> Lançamento da versão 1.0</div>
+            <div class="timeline-item"><span>1998</span> Java 2: introdução de edições (J2SE, J2EE, J2ME)</div>
+            <div class="timeline-item"><span>2006</span> Lançamento do código-fonte do Java (OpenJDK)</div>
+            <div class="timeline-item"><span>2010</span> Aquisição pela Oracle</div>
+            <div class="timeline-item"><span>2017</span> Cadência de lançamentos semestrais (Java 9)</div>
+        </div>
+    </section>
+    <section id="principais-versoes">
+        <h2>Principais Versões</h2>
+        <div class="version">
+            <h3>Java 5 (2004)</h3>
+            <p>Introdução de generics, enumerações, e o loop "for-each".</p>
+        </div>
+        <div class="version">
+            <h3>Java 8 (2014)</h3>
+            <p>Streams, lambdas, e melhorias de interface.</p>
+        </div>
+        <div class="version">
+            <h3>Java 11 (2018)</h3>
+            <p>Primeiro LTS após a nova política, com remoção de APIs antigas e melhorias de desempenho.</p>
+        </div>
+    </section>
+    <section id="evolucao">
+        <h2>Evolução da Tecnologia</h2>
+        <p>A evolução da tecnologia Java é uma história de inovações contínuas que transformaram a linguagem e a plataforma em uma das mais populares e amplamente utilizadas em todo o mundo. Desde sua criação até os dias de hoje, Java tem se adaptado às novas necessidades do mercado de desenvolvimento de software e à evolução dos sistemas computacionais. Aqui está um resumo dessa evolução:
+            <br>
+            <p>1. Início e Criação (1991 - 1995)
+                <br>
+                1991: A história do Java começa na Sun Microsystems, onde um grupo chamado "Green Team" foi formado para criar uma linguagem de programação capaz de rodar em diferentes dispositivos. A ideia inicial foi criar uma linguagem independente de plataforma para facilitar o desenvolvimento de softwares para uma variedade de dispositivos eletrônicos.
+                <br>
+                1994: A primeira versão da linguagem foi chamada Oak. Contudo, devido ao registro de nome, Oak foi substituída por Java em 1995, nomeado em homenagem ao café Java, um tipo de café forte, popular entre os programadores.
+                <br>
+                1995: Lançamento do Java 1.0. Nessa época, a principal inovação era o conceito de "Write Once, Run Anywhere" (WORA), significando que os programas escritos em Java poderiam ser executados em qualquer plataforma que tivesse uma Java Virtual Machine (JVM).<p>
+            <br>
+            <p>2. Crescimento e Consolidação (1996 - 2004)
+                <br>
+                Java 1.1 (1997): Introduziu novas funcionalidades, como JavaBeans, que permitiam a criação de componentes reutilizáveis, e a API de Servlets, que facilitou o desenvolvimento de aplicações web.
+                <br>
+                Java 2 (1998): A versão 2 introduziu grandes mudanças, com a inclusão da plataforma Java 2 Enterprise Edition (J2EE), voltada para o desenvolvimento de aplicações corporativas e web, e o Swing, para a criação de interfaces gráficas.
+                <br>
+                Java 5 (2004): Considerado um marco na evolução da linguagem, o Java 5 (também conhecido como J2SE 5.0) trouxe características como Generics, Enums, Annotations, e Varargs. Esse foi um dos maiores saltos na evolução do Java, introduzindo melhorias significativas na sintaxe e no desempenho.<p>
+            <br>
+            <p>3. Mudança de Modelo e Desafios (2005 - 2010)
+                <br>
+                2006: A Sun Microsystems tornou o Java open source, liberando o código da JVM e da linguagem, o que ajudou a impulsionar ainda mais a adoção do Java.
+                <br>
+                Java 6 (2006): Focou principalmente em melhorias no desempenho, com aprimoramentos na JVM e nas bibliotecas de suporte, além de melhorias no suporte a web services.
+                <br>
+                Java 7 (2011): Introduziu melhorias como o suporte a linguagem de tipos de captura e a NIO 2 (nova API de entrada/saída), que trouxe novas funcionalidades para o manuseio de arquivos e sistemas de arquivos.
+                <br>
+                Java 8 (2014): A versão 8 foi uma das mais importantes na história do Java. Ela trouxe grandes inovações, como o Java Stream API para manipulação de coleções de dados de forma funcional e o Lambda Expressions, que ajudaram a tornar o Java mais moderno e funcional.<p>
+            <br>
+            <p>4. Versões Mais Recentes e Modernização (2017 - Presente)
+                <br>
+                Java 9 (2017): Introduziu o sistema de módulos (Java Platform Module System - JPMS), visando melhorar a modularização e o encapsulamento de código.
+                <br>
+                Java 10 (2018): Introduziu o Local-Variable Type Inference, que permitiu o uso da palavra-chave var para inferir tipos de variáveis, simplificando o código.
+                <br>
+                Java 11 (2018): Marca a primeira versão LTS (Long-Term Support) após o novo modelo de lançamento, com ciclos de lançamento mais rápidos. Introduziu o HTTP Client API e melhorias no desempenho.
+                <br>
+                Java 12 e 13 (2019): Melhoria no desempenho e atualizações incrementais no garbage collection e na JVM.
+                <br>
+                Java 14 (2020): Introduziu records e pattern matching como parte da evolução para tornar a linguagem mais moderna e concisa.
+                <br>
+                Java 15 (2020): Continuou com melhorias de desempenho e novos recursos, incluindo a Z Garbage Collector (ZGC), e também melhorias nas APIs de String e NIO.
+                <br>
+                Java 16 (2021): Introduziu recursos como JEP 376 (ZGC) e JEP 394 (removendo a assinatura de classes padrão).
+                <br>
+                Java 17 (2021): Uma versão LTS importante, trazendo atualizações para simplificar a linguagem, aumentar a segurança e melhorar a modularização.<p>
+        <br>
+            <p>5. Futuro e Perspectivas
+        A evolução do Java continua com lançamentos anuais regulares, com foco em performance, segurança e facilidade de uso. Java está adotando uma abordagem mais rápida para atualizações com funções de preview e introdução de novos recursos em ciclos mais curtos, além de modernizar sua linguagem para continuar relevante no desenvolvimento de aplicativos para servidores, web e dispositivos móveis.</p>
+    </section>
+    <section id="futuro">
+        <h2>O Futuro do Java</h2>
+        <p>O futuro do Java é promissor, especialmente em áreas como inteligência artificial, computação em nuvem, e big data. A linguagem continua a evoluir com lançamentos semestrais que trazem melhorias de desempenho, segurança e usabilidade. Esse ciclo de lançamentos mais ágil mantém o Java relevante e adaptado às necessidades dos desenvolvedores modernos.</p>
+            <br>
+            </p>Com o advento da IoT (Internet das Coisas) e o aumento de dispositivos conectados, o Java, por ser multiplataforma, oferece uma base sólida para o desenvolvimento de soluções distribuídas. Além disso, o Java Virtual Machine (JVM) continua sendo uma das plataformas mais robustas, capaz de rodar diversas linguagens de programação, o que expande as possibilidades para desenvolvedores e empresas.</p>
+            <br>
+            </p>A Oracle e a comunidade Java trabalham em inovações, como o Project Loom, para simplificar o processamento simultâneo de tarefas, e o Project Valhalla, que promete trazer melhorias de performance para tipos de dados. Com isso, o Java está posicionado para continuar como uma linguagem de escolha para projetos de longo prazo e de alta demanda, integrando-se a novas tecnologias e se mantendo à frente das necessidades do mercado.</p>
+    </section>
+    <section id="contato">
+        <h2>Contato</h2>
+        <p>Entre em contato para dúvidas ou sugestões.</p>
+        <form>
+            <label for="name">Nome:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Mensagem:</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+
+            <button type="submit">Enviar</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Linha do Tempo do Java</p>
+    </footer>
+</body>
+</html>
